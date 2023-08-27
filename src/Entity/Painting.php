@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\PaintingRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -20,7 +22,7 @@ class Painting
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $nameEn = null;
 
-    #[ORM\Column(nullable: true)]
+    #[ORM\Column(nullable: true, unique: true)]
     private ?int $number = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
@@ -49,6 +51,17 @@ class Painting
 
     #[ORM\Column]
     private ?bool $enable = null;
+
+    #[ORM\ManyToOne(inversedBy: 'paintings')]
+    private ?Category $category = null;
+
+    #[ORM\OneToMany(mappedBy: 'painting', targetEntity: PaintingImage::class)]
+    private Collection $paintingImages;
+
+    public function __construct()
+    {
+        $this->paintingImages = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -195,6 +208,48 @@ class Painting
     public function setEnable(bool $enable): static
     {
         $this->enable = $enable;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): static
+    {
+        $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, PaintingImage>
+     */
+    public function getPaintingImages(): Collection
+    {
+        return $this->paintingImages;
+    }
+
+    public function addPaintingImage(PaintingImage $paintingImage): static
+    {
+        if (!$this->paintingImages->contains($paintingImage)) {
+            $this->paintingImages->add($paintingImage);
+            $paintingImage->setPainting($this);
+        }
+
+        return $this;
+    }
+
+    public function removePaintingImage(PaintingImage $paintingImage): static
+    {
+        if ($this->paintingImages->removeElement($paintingImage)) {
+            // set the owning side to null (unless already changed)
+            if ($paintingImage->getPainting() === $this) {
+                $paintingImage->setPainting(null);
+            }
+        }
 
         return $this;
     }
