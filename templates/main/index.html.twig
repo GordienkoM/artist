@@ -1,20 +1,108 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
+{# {% block title %}
+	{% trans %}Сайт художницы Ирины Козловой Кузнецовой{% endtrans %}
+{% endblock %} #}
+
+{# {% block mainActive %}id="page-active"{% endblock %}  #}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	<section>
+		{# <h1 class="uk-text-center">
+			{% trans %}ГАЛЕРЕЯ КАРТИН{% endtrans %}
+		</h1> #}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/laragon/www/artist/src/Controller/MainController.php'|file_link(0) }}">src/Controller/MainController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/laragon/www/artist/templates/main/index.html.twig'|file_link(0) }}">templates/main/index.html.twig</a></code></li>
-    </ul>
-</div>
+		<!-- PAINTINGS SLIDER -->
+
+		<div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 3000">
+
+			<div class="uk-slider-container">
+				<ul class="uk-margin-bottom uk-slider-items uk-margin-top">
+
+					{% for painting in paintings %}
+						<li
+							class="gallery-painting uk-text-center">
+							<!-- Slider image -->
+							<div class="uk-panel painting uk-text-center">
+								<div class="gallery-painting-image">
+									<a href="#gallery_{{painting.id}}" uk-toggle>
+										<img src="{{ asset('assets/img/galleryImages/' ~ painting.galleryImage) }}" alt="{{ painting.alt}}">
+									</a>
+								</div>
+								<hr>
+							</div>
+							<!-- Modal Image with close button -->
+							<div id="gallery_{{painting.id}}" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-outside" type="button" uk-close></button>
+									<img class="modal-image uk-text-center" src="{{ asset('assets/img/paintings/' ~ painting.galleryImage) }}" alt="{{ painting.alt}}">
+								</div>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+				<a class="uk-position-center-left-out" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right-out" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+			
+		</div>
+		{# <div class="uk-text-center uk-margin ">
+			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('paintings') }}">{% trans %}Смотреть галерею{% endtrans %}</a>
+		</div> #}
+
+	</section>
+
+	<!-- LESSONS SECTION -->
+
+	
+
+	<!-- PHOTOS SLIDER -->
+
+		<h2 class="uk-text-center">
+		{# {% trans %}События{% endtrans %} #} События
+		</h2>
+
+		<div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 3000">
+
+			<div class="uk-slider-container">
+				<ul class="uk-margin-bottom uk-slider-items uk-margin-top">
+
+					{% for photo in photos %}
+						<li
+							class="gallery-painting uk-text-center">
+							<!-- Slider image -->
+							<div class="uk-panel painting uk-text-center">
+								<div class="gallery-painting-image">
+									<a href="#main_photos{{ photo.id}}" uk-toggle>
+										<img src="{{ asset('assets/img/photos/' ~ photo.file) }}" alt="{{ photo.description}}">
+									</a>
+								</div>
+								<hr>
+							</div>
+							<!-- Modal Image with close button -->
+							<div id="main_photos{{ photo.id}}" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-outside" type="button" uk-close></button>
+									<img class="modal-image uk-text-center" src="{{ asset('assets/img/photos/' ~ photo.file) }}" alt="{{ photo.description}}">
+								</div>
+							</div>
+						</li>
+					{% endfor %}
+				</ul>
+				<a class="uk-position-center-left-out" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right-out" href="#" uk-slidenav-next uk-slider-item="next"></a>
+			</div>
+			
+		</div>
+		{# <div class="uk-text-center uk-margin ">
+			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('events') }}">{% trans %}Подробнее{% endtrans %}</a>
+		</div> #}
+
+	</section>
+
+	<!-- ARTIST SECTION -->
+
+
 {% endblock %}
+
