@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{# {% block title %}
+{% block title %}
 	{% trans %}Сайт художницы Ирины Козловой Кузнецовой{% endtrans %}
-{% endblock %} #}
+{% endblock %}
 
 {# {% block mainActive %}id="page-active"{% endblock %}  #}
 
 {% block body %}
 
 	<section>
-		{# <h1 class="uk-text-center">
-			{% trans %}ГАЛЕРЕЯ КАРТИН{% endtrans %}
-		</h1> #}
+		<h1 class="uk-text-center">
+			{% trans %}Галерея картин{% endtrans %}
+		</h1>
 
 		<!-- PAINTINGS SLIDER -->
 
@@ -59,9 +59,7 @@
 
 	<!-- PHOTOS SLIDER -->
 
-		<h2 class="uk-text-center">
-		{# {% trans %}События{% endtrans %} #} События
-		</h2>
+		<h2 class="uk-text-center">{% trans %}События{% endtrans %}</h2>
 
 		<div class="slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 3000">
 

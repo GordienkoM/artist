@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="ru" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="LRCsdie" resname="Сайт художницы Ирины Козловой Кузнецовой">
+        <source>Сайт художницы Ирины Козловой Кузнецовой</source>
+        <target>Website of artist Irina Kozlova Kuznetsova</target>
+      </trans-unit>
+      <trans-unit id="hC9WgDd" resname="Галерея картин">
+        <source>Галерея картин</source>
+        <target>Gallery</target>
+      </trans-unit>
+      <trans-unit id="IQ2YYL3" resname="События">
+        <source>События</source>
+        <target>Events</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
