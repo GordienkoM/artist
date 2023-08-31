@@ -1,0 +1,55 @@
+<nav class="uk-navbar menu">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-navbar-item uk-logo" href="{{ path('home') }}">
+                    <div class="logo-phrase">
+                        <div class="logo-phrase-top">{% trans %}Ирина Козлова - Кузнецова{% endtrans %}</div>
+                        <div class="logo-phrase-bottom uk-align-right">{% trans %}художник-живописец{% endtrans %}</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@s">
+            <li class="uk-navbar-item page-active">
+                <a {% block mainActive %}{% endblock %} 
+                href="{{ path('home') }}">{% trans %}Главная{% endtrans %}</a>
+            </li>
+            <li class="uk-navbar-item">
+                <a {% block galleryActive %}{% endblock %}
+                href="{{ path('home') }}">{% trans %}Галерея
+                    {% endtrans %}</a>
+            </li>
+            <li class="uk-navbar-item">
+                <a {% block lessonsActive %}{% endblock %}  
+                href="{{ path('home') }}">{% trans %}Уроки рисования{% endtrans %}</a>
+            </li>
+            <li class="uk-navbar-item">
+                <a {% block artistActive %}{% endblock %}
+                href="{{ path('home') }}">{% trans %}О художнике
+                    {% endtrans %}</a>
+            </li>
+
+            <li class="uk-navbar-item">
+                <a {% block eventActive %}{% endblock %}
+                href="{{ path('home') }}">{% trans %}События{% endtrans %}</a>
+            </li>
+            <li class="uk-navbar-item">
+                <a {% block contactActive %}{% endblock %}
+                href="{{ path('home') }}">{% trans %}Контакты{% endtrans %}</a>
+            </li>
+        </ul>
+        <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+    </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav">
+            <li><a href="{{ path('home') }}">{% trans %}Главная{% endtrans %}</a></li>
+            <li><a href="{{ path('home') }}">{% trans %}Галерея{% endtrans %}</a></li>   
+        </ul>
+    </div>
+</div>

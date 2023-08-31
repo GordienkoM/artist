@@ -1,0 +1,65 @@
+<div id="preheader" class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <ul class="social-media uk-flex">
+            <li>
+                <a target="_blank" href="https://vk.com/ikozart">
+                    <img src="{{ asset('assets/img/social-media/vk.png') }}" alt="icône de vkontakte">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/artkozlova">
+                    <img src="{{ asset('assets/img/social-media/facebook.png') }}" alt="icône de facebook">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/channel/UCUu97jCyEiwFAzdK_dGvcbg/videos">
+                    <img src="{{ asset('assets/img/social-media/youtube.png') }}" alt="icône de youtube">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/artkozi/">
+                    <img src="{{ asset('assets/img/social-media/instagram.png') }}" alt="icone d'instagram">
+                </a>
+            </li>
+            <li>
+                <a uk-tooltip="title: @Artkozi; pos: bottom-right">
+                    <img src="{{ asset('assets/img/social-media/telegram.png') }}" alt="icône de telegram">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="email_telephone" class="uk-navbar-center uk-visible@s ">
+        <address class="uk-flex">
+            <div class="uk-flex email_telephone_distance">
+                <div class="icone uk-margin-right">
+                    <a uk-tooltip="title: kuznetsova-i-v@mail.ru; pos: bottom" href="mailto:kuznetsova-i-v@mail.ru"><img src="{{ asset('assets/img/social-media/email.png') }}" alt="icône d'enveloppe"></a>
+                </div>
+                <div class="uk-visible@m">
+                    <a href="mailto:kuznetsova-i-v@mail.ru">kuznetsova-i-v@mail.ru</a>
+                </div>
+            </div>
+            <div class="uk-flex uk-margin-right">
+                <div class="icone uk-margin-right">
+                    <a href="tel:+79518726432" uk-tooltip="title: +79518726432; pos: bottom"><img src="{{ asset('assets/img/social-media/telephone.png') }}" alt="icône de téléphone"></a>
+                </div>
+                <div class="uk-visible@m">
+                    <a href="tel:+79518726432">+79518726432</a>
+                </div>
+            </div>
+        </address>
+    </div>
+
+    <div id="locales" class="uk-navbar-right uk-margin-bottom">
+    {% for locale in locales %}
+        <ul class="uk-navbar-nav">
+            {% if locale != app.request.locale %}
+            <li class="uk-active">
+            {% else %}
+            <li>
+            {% endif %}                    
+                <a href="{{ path('change_locale', {'locale': locale}) }}">{{ locale }}</a>
+            </li>
+        </ul>
+    {% endfor %}
+    </div>
+</div>
