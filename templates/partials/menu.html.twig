@@ -19,7 +19,7 @@
             </li>
             <li class="uk-navbar-item">
                 <a {% block galleryActive %}{% endblock %}
-                href="{{ path('home') }}">{% trans %}Галерея
+                href="{{ path('paintings') }}">{% trans %}Галерея
                     {% endtrans %}</a>
             </li>
             <li class="uk-navbar-item">
@@ -49,7 +49,7 @@
     <div class="uk-offcanvas-bar">
         <ul class="uk-nav">
             <li><a href="{{ path('home') }}">{% trans %}Главная{% endtrans %}</a></li>
-            <li><a href="{{ path('home') }}">{% trans %}Галерея{% endtrans %}</a></li>   
+            <li><a href="{{ path('paintings') }}">{% trans %}Галерея{% endtrans %}</a></li>   
         </ul>
     </div>
 </div>

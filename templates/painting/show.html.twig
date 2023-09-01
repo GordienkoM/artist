@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ painting.name }}
+{% endblock %}
+
+{% block galleryActive %}id="page-active"{% endblock %}
+
+{% block body %}
+
+	<div   class="uk-child-width-expand@s " uk-grid>
+		<div id="image-viewer">
+			<ul id="main-image" class="uk-switcher">
+				{% for image in painting.paintingImages %}
+					<li class="painting-show"><img src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}"></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="">
+			<div>
+				<h1 class="">{{painting.name}}</h1>
+				<div>
+					<p class="uk-margin-top">
+						{% trans %}Артикл{% endtrans %}:
+						{{painting.number}}
+					</p>
+					<p class="">
+						{% trans  %}Размер{% endtrans %}:
+						{{ painting.hight}}
+						X
+						{{ painting.width }}
+						{% trans %}см{% endtrans %}
+					</p>
+					<p class="">
+						{% trans %}Материал{% endtrans %}:
+						{{ painting.material }}
+						
+						{% trans %}Год создания{% endtrans %}:
+						{{ painting.creationYear }}
+					</p>
+				</div>
+
+				<p>{{ painting.price }}
+					{% trans %}рублей{% endtrans %}
+				</p>
+			</div>
+			<div>
+				<ul id="viewer-switcher" class="uk-subnav uk-subnav-pill" uk-switcher="connect: #main-image">
+					{% for image in painting.paintingImages %}
+						<li class="painting-show-small">
+							<a href="#"><img src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}"></a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
