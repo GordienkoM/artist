@@ -96,11 +96,30 @@
 		{# <div class="uk-text-center uk-margin ">
 			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('events') }}">{% trans %}Подробнее{% endtrans %}</a>
 		</div> #}
-
 	</section>
 
 	<!-- ARTIST SECTION -->
-
+	<section id="artist-section" >
+		<h2 >{% trans %}О ХУДОЖНИКЕ{% endtrans %}</h2>
+		<div class="uk-panel">
+			<img class="image-bord uk-align-center uk-align-left@m uk-margin-remove-adjacent" src="{{ asset('assets/img/artist.jpg') }}" alt="Artist">
+			<div>
+				<div class="artist-name">{% trans %}Ирина Козлова-Кузнецова - {% endtrans %}</div>
+				<p >{% trans %}Работает в живописных направлениях реализм и импрессионизм.{% endtrans %}</p>
+				<p >{% trans %}Основной материал — холст, масло.{% endtrans %}</p>
+				<p >{% trans %}Активный участник множества областных, городских и региональных выставок.{% endtrans %}</p>
+				<p >{% trans %}«Пишу в позитивном настроении, стараюсь впитать красоту природы и отразить это на картине».{% endtrans %}</p>
+				<p >{% trans %}Ключевая тема картин — изображение жизни, как она есть, через свободное импрессионистическое-реалистичное видение различных состояний природы, натюрмортов и портретов.{% endtrans %}</p>			
+				<p >{% trans %}Российские деревни, улочки родного города, контраст утра и ночи, знойного дня и дождливого вечера, будней и выходных, достопримечательностей и заброшенных мест города дают возможность расширить горизонты восприятия и показать, как энергетика города и деревни, лесов и полей заряжает добром и любовью.{% endtrans %}</p>
+				<p >{% trans %}Автор убеждена, что живопись природы способна воодушевить зрителя, обратить его внимание на красоту окружающего мира и вдохновить на творческие свершения. {% endtrans %}</p>
+				<p >{% trans %}Цвет и манера письма — понятия неразделимые, они для художницы являлся воплощением чувств, в нём проявляется яркий темперамент ее личности.{% endtrans %}</p>
+				<p >{% trans %}Ее живопись пронизана эстетикой импрессионизма, чувственна и эмоциональна.{% endtrans %}</p>
+			</div>
+		</div>
+		<div class="uk-text-center uk-margin ">
+			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('about_artist') }}">{% trans %}Подробнее{% endtrans %}</a>
+		</div>
+	</section>
 
 {% endblock %}
 
