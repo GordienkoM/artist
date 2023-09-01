@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\PaintingRepository;
 use App\Repository\EventPhotoRepository;
+use App\Repository\TextInsertRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -34,6 +35,17 @@ class MainController extends AbstractController
 
         // On revient sur la page précédente
         return $this->redirect($request->headers->get('referer'));
+    }
+
+    #[Route('/artist', name: 'about_artist')]
+    public function artist(TextInsertRepository $textInsertRepository): Response
+    {
+        $artistText=$textInsertRepository->findBy(
+            ['name' => 'about_artist']
+        );
+        return $this->render('main/artist.html.twig', [
+            'artistText'     => $artistText,
+        ]);
     }
 
 }
