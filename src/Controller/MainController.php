@@ -40,7 +40,7 @@ class MainController extends AbstractController
     #[Route('/artist', name: 'about_artist')]
     public function artist(TextInsertRepository $textInsertRepository): Response
     {
-        $artistText=$textInsertRepository->findBy(
+        $artistText=$textInsertRepository->findOneBy(
             ['name' => 'about_artist']
         );
         return $this->render('main/artist.html.twig', [
