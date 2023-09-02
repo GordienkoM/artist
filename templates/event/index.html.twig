@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}События{% endtrans %}
+{% endblock %}
+
+{% block eventActive %}id="page-active"{% endblock %}
+
+{% block body %}
+
+	<div class="events-pages">
+		<div class="uk-text-right">
+			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('photos') }}">{% trans %}Смотреть все фото и видео{% endtrans %}</a>
+		</div>
+		<h1 class="uk-text-center">
+			{% trans %}События{% endtrans %}
+		</h1>
+		<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-padding-small" uk-grid>
+			{% for event in events %}
+				<div>
+					<div class="uk-card">
+						<div class="uk-card-media-top">
+							<img class="event-image" src="{{ asset('assets/img/events/' ~ event.image) }}" alt="">
+						</div>
+						<div class="event-legend">
+							<span>
+								{% if (app.request.locale == 'en') and (event.nameEn is not empty)  %}
+									{{event.nameEn}}
+								{% else %}
+									{{event.name}}
+								{% endif %}
+							</span>
+						</div>
+						<div class="uk-padding-small">
+							<a class="uk-button uk-button-secondary uk-button uk-text-center"  href="{{ path('event_show', {'id': event.id}) }}" >
+								{% trans %}Смотреть{% endtrans %}
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+	</div>
+
+{% endblock %}

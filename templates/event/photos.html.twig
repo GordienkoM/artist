@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Все фото и видео{% endtrans %}
+{% endblock %}
+
+{% block eventActive %}id="page-active"{% endblock %}
+
+{% block body %}
+
+	<div class="events-pages">
+		<h1 class="uk-text-center">
+			{% trans %}Все фото и видео{% endtrans %}
+		</h1>
+		<div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center uk-padding-small" uk-grid="masonry: true">
+			{% for photo in photos %}
+				<div>
+					<div class="uk-card">
+						<div class="uk-card-media-top  uk-flex uk-flex-center uk-flex-middle">
+							<a href="#all_photo{{ photo.id}}" uk-toggle>
+								<img class="photo-image" src="{{ asset('assets/img/photos/' ~ photo.file) }}" alt="">
+							</a>
+							<!-- Modal Image with close button -->
+							<div id="all_photo{{ photo.id}}" uk-modal>
+								<div class="uk-modal-dialog">
+									<button class="uk-modal-close-outside" type="button" uk-close></button>
+									<img class="uk-text-center" src="{{ asset('assets/img/photos/' ~ photo.file) }}" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="event-legend">
+							<span >
+								{% if (photo.description is not empty)  %}
+									{{photo.description}}
+								{% endif %}
+							</span>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			<div class="uk-card">
+				<video controls="controls">
+					<source src="{{ asset('assets/img/videos/video1.mp4') }}">
+				</video>
+			</div>
+
+			<div class="uk-card">
+				<iframe  src="https://www.youtube.com/embed/dt8SyNecPVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+				</iframe>
+			</div>
+			<div class="uk-card">
+				<video src="{{ asset('assets/img/videos/video2.mp4') }}" width="" height="" uk-video="automute: true></video>
+			</div>
+
+
+		</div>
+
+	</div>
+
+{% endblock %}
