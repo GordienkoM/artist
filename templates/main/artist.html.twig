@@ -26,7 +26,7 @@
 			<p class="uk-text-center">{% trans %}Участие в выставках, фестивалях, конкурсах:{% endtrans %}</p>
 			<div>
 				{% if (app.request.locale == 'en') and (artistText.textEn is not empty) %}
-					{{artistText.textEn}}
+					{{artistText.textEn|raw}}
 				{% else %}
 					{{artistText.text|raw }}
 				{% endif %}
