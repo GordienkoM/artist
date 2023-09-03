@@ -4,7 +4,7 @@
 	{% trans %}Сайт художницы Ирины Козловой Кузнецовой{% endtrans %}
 {% endblock %}
 
-{# {% block mainActive %}id="page-active"{% endblock %}  #}
+{% block mainActive %}id="page-active"{% endblock %} 
 
 {% block body %}
 
@@ -47,13 +47,72 @@
 			</div>
 			
 		</div>
-		{# <div class="uk-text-center uk-margin ">
+		<div class="uk-text-center uk-margin ">
 			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('paintings') }}">{% trans %}Смотреть галерею{% endtrans %}</a>
-		</div> #}
-
+		</div>
 	</section>
 
-	<!-- LESSONS SECTION -->
+<!-- LESSONS SECTION -->
+
+	<section id="lessons-section" class="uk-padding">
+		<h2>{% trans %}Уроки рисования{% endtrans %}</h2>
+		<div class="uk-child-width-1-3@m" uk-grid>
+			<div>
+				<div>
+					<div class="lessons-section-image">
+						<img src="{{ asset('assets/img/courses_lessons.jpg') }}" alt="Le buste blanc d'un homme  et un dessin de ce buste">
+					</div>
+					<div>
+						<h3 class="lessons-section-header">{% trans %}Готовые уроки и курсы{% endtrans %}</h3>
+						<p>{% trans %}Уроки и курсы составлены с учетом академических знаний, знаний старых мастеров и с добавлением личного опыта.{% endtrans %}</p>
+						<p>{% trans %}Научу как нарисовать куб, призму, конус, шар, цилиндр и другие гипсовые фигуры, интерьер, портреты, фигуру человека, гипсовые головы, пейзаж.
+																																																																						                     Получите знания по пластической анатомии, воздушной и линейной перспективе,свето-теневой передачи объектов.{% endtrans %}</p>
+						<p>{% trans %}Можете приобрести уроки живописнойи акварелью гуашью акрилом темпирой маслом пастелью цветными карандашами в различных техниках и для разного возроста.{% endtrans %}</p>
+						<p>{% trans %}Рассказываю и показываю все пошагово и понятно. Можно приобрести уроки с обратной связью.{% endtrans %}</p>
+						<a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div class="lessons-section-image">
+						<img src="{{ asset('assets/img/online.jpg') }}" alt="Quatre femmes avec des tableaux dans les main, de l'eau et des bateaux derrière eux">
+					</div>
+					<div>
+						<h3 class="lessons-section-header">{% trans %}Онлай-занятия инидивидуальные и в мини-группе{% endtrans %}</h3>
+						<p>{% trans %}Занимаюсь дистанционно с 2 камер, вы видите меня и работу одновременно.  Работаю с учениками с нуля, новичками и с опытными{% endtrans %}
+						</p>
+						<p>{% trans %}Пошагово все объясняю и рисую вместе с вами, легко и понятно, показывая и объясняя каждый шаг, как что делать. Поэтому у всех получается, даже если никогда не рисовали.
+							{% endtrans %}
+						</p>
+						<p>{% trans %}Готовлю учеников в спец. ВУЗЫ, колледжи, школы. Ученики со всей России и со всего Мира.   Занимаемся по академической программе, дополняя своим опытом и авторскими разработками.{% endtrans %}
+						</p>
+						<p>{% trans %}Есть группы: академический рисунок, скетчинг, натюрморт, портрет, пейзаж, анимэ, комиксы, пластическая анатомия, живопись маслом, японская живопись, роспись, и т. д.{% endtrans %}
+						</p>
+						<a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div class="lessons-section-image">
+						<img src="{{ asset('assets/img/material.jpg') }}" alt="Un enfant qui dessine des hérissons">
+					</div>
+					<div>
+						<h3 class="lessons-section-header">{% trans %}Бесплатные уроки и учебный материял{% endtrans %}</h3>
+						<p>{% trans %}Если вам нравиться учиться обучаться дома, то здесь вы можете погрузиться в мир живописи и совершенно бесплатно пройти онлайн-курс "Азы рисования".
+							{% endtrans %}
+						</p>
+						<p>{% trans %}Бесплатные уроки и статьи о многом, что касается живописи, рисунка и композиции. Собрана информация из старинных книг мастеров из библиотек: Российской государственной библиотеке,  библиотека им. Сурикова, научная библиотека Российской академии художеств в Санкт-Петербурге и др.{% endtrans %}
+						</p>
+						<p>{% trans %}Забавные, странные и интересные факты о живописи и художниках. Самые разные способы писать картины и необычные сюжеты из биографии известных мастеров.{% endtrans %}
+						</p>
+						<a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	
 
@@ -93,9 +152,9 @@
 			</div>
 			
 		</div>
-		{# <div class="uk-text-center uk-margin ">
+		<div class="uk-text-center uk-margin ">
 			<a class="uk-button uk-button-secondary uk-button-large uk-text-center" href="{{ path('events') }}">{% trans %}Подробнее{% endtrans %}</a>
-		</div> #}
+		</div>
 	</section>
 
 	<!-- ARTIST SECTION -->
