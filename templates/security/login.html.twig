@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Войти в учётную запись{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="uk-flex uk-flex-column uk-flex-center"></div>
+    <div class="uk-container uk-container-small">
+        <form class=" uk-form-stacked uk-card uk-card-default uk-card-large uk-card-body" method="post">
+    {% if error %}
+        <div class="uk-alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            {% trans %}Ваша учётная запись{% endtrans %}{{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">{% trans %}Выйти{% endtrans %}</a>
+        </div>
+    {% endif %}
+
+    <h1>{% trans %}Войти в учётную запись{% endtrans %}</h1>
+    <div class="uk-margin">
+        <label class="uk-margin-large"  for="inputEmail">Email</label><br>
+        <input class="uk-input uk-form-width-large" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+    </div>
+    <div>
+        <label class="uk-margin-large"  for="inputPassword">{% trans %}Пороль{% endtrans %}</label><br>
+        <input class="uk-input uk-form-width-large" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+
+        <input type="hidden" name="_csrf_token"
+            value="{{ csrf_token('authenticate') }}"
+        >
+    </div>
+     <button class="uk-button uk-button-secondary uk-margin" type="submit">
+        {% trans %}Войти{% endtrans %}
+    </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
