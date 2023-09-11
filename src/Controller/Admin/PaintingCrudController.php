@@ -53,7 +53,7 @@ class PaintingCrudController extends AbstractCrudController
             TextField::new('altEn','Описание фото англ.')->hideOnIndex(),
             BooleanField::new('enable','Актив.'),
             ArrayField::new('images','Изображения')->onlyOnIndex(),
-            AssociationField::new('images','Изображения')->hideOnIndex(),
+            // AssociationField::new('images','Изображения')->hideOnIndex(),
 
         ];
     }
