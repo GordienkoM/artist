@@ -22,24 +22,24 @@
                 href="{{ path('paintings') }}">{% trans %}Галерея
                     {% endtrans %}</a>
             </li>
-            <li class="uk-navbar-item">
+            {# <li class="uk-navbar-item">
                 <a {% block lessonsActive %}{% endblock %}  
                 href="{{ path('home') }}">{% trans %}Уроки рисования{% endtrans %}</a>
-            </li>
+            </li> #}
             <li class="uk-navbar-item">
                 <a {% block artistActive %}{% endblock %}
                 href="{{ path('about_artist') }}">{% trans %}О художнике
                     {% endtrans %}</a>
             </li>
 
-            <li class="uk-navbar-item">
+            {# <li class="uk-navbar-item">
                 <a {% block eventActive %}{% endblock %}
                 href="{{ path('events') }}">{% trans %}События{% endtrans %}</a>
             </li>
             <li class="uk-navbar-item">
                 <a {% block contactActive %}{% endblock %}
                 href="{{ path('home') }}">{% trans %}Контакты{% endtrans %}</a>
-            </li>
+            </li> #}
         </ul>
         <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
     </div>
