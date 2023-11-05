@@ -286,6 +286,7 @@ address a:hover {
 }
 
 .image-bord {	
+	margin-right: 60px;
 	border-right: 2px solid var(--dark-grey);
 	border-bottom: 2px solid var(--dark-grey);
 	padding-right: 20px;
