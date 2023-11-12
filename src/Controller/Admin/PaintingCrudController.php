@@ -36,13 +36,13 @@ class PaintingCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id')->hideOnForm(),
+            // IdField::new('id')->hideOnForm(),
             ImageField::new('gallery_image','Фото в галерее')               
             ->setBasePath(self::GALLERY_IMAGE_BASE_PATH)
             ->setUploadDir(self::GALLERY_IMAGE_UPLOAD_DIR)
             ->setSortable(false),
             TextField::new('name','Название'),
-            TextField::new('nameEn','Название англ.'),
+            TextField::new('nameEn','Название англ.')->hideOnIndex(),
             IntegerField::new('number','Номер'),
             NumberField::new('price','Цена'),
             IntegerField::new('creationYear','Год создания'),
@@ -50,10 +50,11 @@ class PaintingCrudController extends AbstractCrudController
             NumberField::new('width','Ширина')->setNumDecimals(1),
             TextField::new('material','Матерьял'),
             TextField::new('alt','Описание фото')->hideOnIndex(),
-            TextField::new('altEn','Описание фото англ.')->hideOnIndex(),
+            TextField::new('altEn','Описание фото англ.'),
             BooleanField::new('enable','Актив.'),
-            ArrayField::new('images','Изображения')->onlyOnIndex(),
-            // AssociationField::new('images','Изображения')->hideOnIndex(),
+            ArrayField::new('paintingImages','Изображения')->onlyOnIndex(),
+            AssociationField::new('paintingImages','Изображения')->hideOnIndex(),
+            AssociationField::new('category','Категория'),
 
         ];
     }

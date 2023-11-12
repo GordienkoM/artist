@@ -55,8 +55,14 @@ class DashboardController extends AbstractDashboardController
         ]);
         // yield MenuItem::linkToCrud('Картины', 'fa fa-picture-o', Painting::class);
         yield MenuItem::linkToCrud('Категории', 'fa fa-list-alt', Category::class);
-        yield MenuItem::linkToCrud('Форографии картин', 'fas fa-camera-retro', PaintingImage::class);
+        //yield MenuItem::linkToCrud('Форографии картин', 'fas fa-camera-retro', PaintingImage::class);
+        yield MenuItem::subMenu('Форографии картин', 'fas fa-camera-retro')->setSubItems([
+            MenuItem::linkToCrud('Добавить фото картины', 'fas fa-plus', PaintingImage::class)->setAction(Crud::PAGE_NEW),
+            MenuItem::linkToCrud('Посмотреть фото картины', 'fas fa-eye', PaintingImage::class)
+        ]);
+
         yield MenuItem::linkToCrud('События', 'fa fa-calendar', Event::class);
         yield MenuItem::linkToCrud('Форографии событий', 'fas fa-camera', EventPhoto::class);
+        //yield MenuItem::section('test');
     }
 }
