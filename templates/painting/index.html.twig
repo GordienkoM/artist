@@ -29,18 +29,21 @@
 				{% for painting in paintings %}				
 					<li data-color="{{painting.category.name}}">
 						<div class="uk-card ">
-							<div class="uk-text-center">
-								<div
-									class="uk-text-center ">
+							<div class="uk-text-center rounded-frame">
+								<div class="uk-text-center ">
+									<div class="">
+										<img src="{{ asset('assets/img/galleryImages/' ~ painting.galleryImage) }}" alt="">
+										
+									</div>
 									{# Transition (Bottom) Uikit #}
-									<div class="uk-inline-clip margin-top uk-transition-toggle" tabindex="0">
+									{# <div class="uk-inline-clip margin-top uk-transition-toggle" tabindex="0">
 										<img src="{{ asset('assets/img/galleryImages/' ~ painting.galleryImage) }}" alt="">
 										<div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
 											<p class="uk-h4 uk-margin-remove">
 												<a class="uk-link-text" href="{{ path('painting_show', {'id': painting.id}) }}">{% trans %}Смотреть{% endtrans %}</a>
 											</p>
 										</div>
-									</div>
+									</div> #}
 								</div>
 							</div>
 							<div class="painting-text">

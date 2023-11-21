@@ -323,6 +323,24 @@ footer div {
 	max-width: 150px
 }
 
+/*-------------------------*/
+/* GALLERY PAGE         
+/*-------------------------*/
+#gallery {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+div.rounded-frame {
+	border: 2px solid var(--grey-base);
+	border-radius: 15px;
+}
+
+div.rounded-frame img {
+	height: 100%
+}
+
+
 
 /*-------------------------*/
 /* PAINTINGS        
@@ -515,10 +533,6 @@ footer div {
 /* Paintings      
 /*-------------------------*/
 
-#gallery {
-	padding-right: 100px;
-	padding-left: 100px;
-}
 
 #image-viewer {
 	height: 460px;
