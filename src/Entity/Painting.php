@@ -47,7 +47,7 @@ class Painting
     private ?string $width = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $material = null;
+    private ?string $material = "холст и масло";
 
     #[ORM\Column]
     private ?bool $enable = null;
