@@ -30,7 +30,7 @@ class PaintingCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Картины')
             ->setEntityLabelInSingular('картину')
             ->setPageTitle("index", "Картины")
-            ->setPaginatorPageSize(10);
+            ->setPaginatorPageSize(50);
     }
 
     public function configureFields(string $pageName): iterable

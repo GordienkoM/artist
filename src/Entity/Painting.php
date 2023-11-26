@@ -47,10 +47,10 @@ class Painting
     private ?string $width = null;
 
     #[ORM\Column(length: 255, nullable: true)]
-    private ?string $material = "холст и масло";
+    private ?string $material = "холст, натянутый на подрамник, масло";
 
     #[ORM\Column]
-    private ?bool $enable = null;
+    private ?bool $enable = true;
 
     #[ORM\ManyToOne(inversedBy: 'paintings')]
     private ?Category $category = null;
