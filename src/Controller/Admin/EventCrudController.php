@@ -26,7 +26,7 @@ class EventCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('События')
             ->setEntityLabelInSingular('событие')
             ->setPageTitle("index", "События")
-            ->setPaginatorPageSize(10);
+            ->setPaginatorPageSize(50);
     }
   
     public function configureFields(string $pageName): iterable

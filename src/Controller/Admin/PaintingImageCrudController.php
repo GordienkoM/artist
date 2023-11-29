@@ -25,7 +25,7 @@ class PaintingImageCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Изображения картин')
             ->setEntityLabelInSingular('изображению картин')
             ->setPageTitle("index", "Изображения картин")
-            ->setPaginatorPageSize(10);
+            ->setPaginatorPageSize(50);
     }
 
 
