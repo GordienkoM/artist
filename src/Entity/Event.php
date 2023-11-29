@@ -26,7 +26,7 @@ class Event
     private ?string $image = null;
 
     #[ORM\Column]
-    private ?bool $enable = null;
+    private ?bool $enable = true;
 
     #[ORM\OneToMany(mappedBy: 'event', targetEntity: EventPhoto::class)]
     private Collection $photos;

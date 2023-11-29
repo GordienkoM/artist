@@ -334,11 +334,13 @@ footer div {
 div.rounded-frame {
 	border: 2px solid var(--grey-base);
 	border-radius: 15px;
+	/* height: 250px */
 }
 
-div.rounded-frame img {
-	height: 100%
-}
+/* div.rounded-frame img {
+	height: 100%;
+	width:auto;
+} */
 
 
 
@@ -357,18 +359,24 @@ div.rounded-frame img {
 }
 
 .painting-name{
-	font-family: 'Open Sans Light', sans-serif;
-	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 }
 
 .painting-size{
 	font-family: 'AGLettericaCondensedLight', sans-serif;
-	font-size: 10px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.painting-year{
+	font-family: 'Open Sans Light', sans-serif;
+	font-size: 16px;	
 }
 
 .painting-price{
-	font-family: 'Open Sans Light', sans-serif;
-	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
 }
 
 .gallery-image {
