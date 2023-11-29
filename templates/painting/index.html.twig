@@ -46,7 +46,7 @@
 								</a>						
 							</div>
 							<div class="painting-text">
-								<div class=" uk-text-center painting-name">{{painting.name}}</div>
+								<div class=" uk-text-center painting-name"><a href="{{ path('painting_show', {'id': painting.id}) }}">{{painting.name}}</a></div>
 								<div class="uk-text-center painting-size">
 									{{ painting.hight}}
 									X
