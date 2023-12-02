@@ -334,13 +334,14 @@ footer div {
 div.rounded-frame {
 	border: 2px solid var(--grey-base);
 	border-radius: 15px;
-	/* height: 250px */
+	height: 250px;
+	
 }
 
-/* div.rounded-frame img {
-	height: 100%;
+div.rounded-frame img {
+	height: 250px;
 	width:auto;
-} */
+}
 
 
 

@@ -26,13 +26,14 @@
 				{% endfor %}
 			</ul>
 			<ul class="js-filter uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid>
-				{% for painting in paintings %}				
+				{% for painting in paintings %}
+					{% set imagePath = asset('assets/img/galleryImages/' ~ painting.galleryImage) %}				
 					<li data-color="{{painting.category.name}}">
 						<div class="uk-card ">
-							<div class="uk-text-center rounded-frame">
+							{# <div class="uk-text-center rounded-frame"> #}
+							<div class="uk-text-center rounded-frame" style="background-image:url('{{ imagePath }}'); background-repeat: no-repeat; background-position: center; background-size: contain; ">
 								<a href="{{ path('painting_show', {'id': painting.id}) }}">
-									<div class="uk-text-center">
-										<img src="{{ asset('assets/img/galleryImages/' ~ painting.galleryImage) }}" alt="">	
+
 							{# Transition (Bottom) Uikit #}
 							{# <div class="uk-inline-clip margin-top uk-transition-toggle" tabindex="0">
 								<img src="{{ asset('assets/img/galleryImages/' ~ painting.galleryImage) }}" alt="">
@@ -42,7 +43,6 @@
 									</p>
 								</div>
 							</div> #}
-									</div>
 								</a>						
 							</div>
 							<div class="painting-text">
