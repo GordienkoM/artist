@@ -289,8 +289,8 @@ address a:hover {
 	margin-right: 60px;
 	border-right: 2px solid var(--dark-grey);
 	border-bottom: 2px solid var(--dark-grey);
-	padding-right: 20px;
-	padding-bottom: 20px;
+	padding-right: 30px;
+	padding-bottom: 30px;
 }
 
 .artist-name{
@@ -319,9 +319,15 @@ footer div {
 	color: var(--white);
 }
 
+#footer-columns div div, #footer-columns address div{
+margin-bottom: 6px;
+}
+
 #footer-image img {
 	max-width: 150px
 }
+
+
 
 /*-------------------------*/
 /* GALLERY PAGE         
