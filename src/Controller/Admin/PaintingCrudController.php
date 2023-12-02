@@ -30,6 +30,7 @@ class PaintingCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('Картины')
             ->setEntityLabelInSingular('картину')
             ->setPageTitle("index", "Картины")
+            //->setDefaultSort(['id' => 'DESC'])
             ->setPaginatorPageSize(50);
     }
 
@@ -43,7 +44,7 @@ class PaintingCrudController extends AbstractCrudController
             ->setSortable(false), 
             //->setSortable(false)->hideOnForm(), 
             AssociationField::new('category','Категория'),
-            AssociationField::new('paintingImages','Изображения')->hideOnIndex()->autocomplete(),
+            // AssociationField::new('paintingImages','Изображения')->hideOnIndex()->autocomplete(),
             //TextField::new('gallery_image','Фото в галерее'),          
             TextField::new('name','Название'),  
             TextField::new('nameEn','Название англ.')->hideOnIndex(),
