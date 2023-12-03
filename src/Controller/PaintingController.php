@@ -16,7 +16,7 @@ class PaintingController extends AbstractController
     {
         $paintings = $paintingRepository->findBy(
             ['enable' => 'true'],
-            ['name' => 'ASC']
+            ['number' => 'DESC']
         );
 
         $categories = $categoryRepository->findAll();
