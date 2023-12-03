@@ -12,7 +12,18 @@
 		<div id="image-viewer">
 			<ul id="main-image" class="uk-switcher">
 				{% for image in painting.paintingImages %}
-					<li class="painting-show"><img src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}"></li>
+					<li class="painting-show">
+						<a href="#image_{{image.id}}" uk-toggle>
+							<img src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}">
+						</a>
+						<!-- Modal Image with close button -->
+						<div id="image_{{image.id}}" uk-modal>
+							<div class="uk-modal-dialog">
+								<button class="uk-modal-close-outside" type="button" uk-close></button>
+								<img class="modal-image uk-text-center" src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}">
+							</div>
+						</div>
+					</li>
 				{% endfor %}
 			</ul>
 		</div>
