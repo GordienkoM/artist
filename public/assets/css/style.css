@@ -16,6 +16,12 @@
 html {
 	background: url('../img/Palitra.png') no-repeat top left;
 	background-position: 20px 70px;
+	
+}
+
+html a:hover {
+	color: var(--black-text);
+	text-decoration: none;
 }
 
 body {
@@ -143,10 +149,10 @@ address {
 /*-------------------------*/
 
 
-address a:hover {
+/* address a:hover {
 	color: var(--black-text);
 	text-decoration: none;
-}
+} */
 
 
 .logo-phrase {
