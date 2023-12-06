@@ -6,7 +6,7 @@
 	--black-text: #000000;
 	--grey-text: #2f2f2f;
 	--grey-base: #BCBDBD;
-	--dark-grey: #BCBDBD;
+	--dark-grey: #9d9d9d;
 	--grey: #EEEEEE;
 	--black-legend: #2B2A29;
 	--white: white;
@@ -156,7 +156,7 @@ address {
 
 
 .logo-phrase {
-	color: var(--black-text);
+	color: var(--dark-grey);
 	text-transform: none;
 	padding-top: 40px;
 	padding-bottom: 40px;
