@@ -6,8 +6,9 @@
 	--black-text: #000000;
 	--grey-text: #2f2f2f;
 	--grey-base: #BCBDBD;
-	--dark-grey: #9d9d9d;
+	--dark-grey: #727271;
 	--grey: #EEEEEE;
+	--light-grey: #DDDDDE;
 	--black-legend: #2B2A29;
 	--white: white;
 	--red: red;
@@ -397,6 +398,34 @@ div.rounded-frame {
 div.rounded-frame img {
 	
 	width:auto;
+}
+
+.mode-price-button {
+	font-family: 'Arial', sans-serif;
+	color: var(--black-text);
+	background-color: var(--light-grey);
+	font-size: 17px;
+	text-transform: uppercase;
+	border: 2px solid var(--light-grey);
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.copy-phrase{
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: var(--black-text);
+}
+
+.category {
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	color: var(--dark-grey);
 }
 
 
