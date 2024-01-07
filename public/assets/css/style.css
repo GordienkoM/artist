@@ -389,9 +389,10 @@ margin-bottom: 6px;
 }
 
 div.rounded-frame {
+	aspect-ratio: 1/1;
 	border: 2px solid var(--grey-base);
 	border-radius: 15px;
-	height: 370px;
+	/* height: 370px; */
 	
 }
 
@@ -421,24 +422,16 @@ div.rounded-frame img {
 	color: var(--black-text);
 }
 
-.category {
-
+.painting-categories li a, .uk-subnav-pill>*>:first-child{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	color: var(--dark-grey);
 }
 
 
-
 /*-------------------------*/
 /* PAINTINGS        
 /*-------------------------*/
-
-.painting-categories{
-	font-family: 'Open Sans Light', sans-serif;
-	font-size: 19px;
-}
-
 
 .painting-text{
 	padding-top: 20px;
@@ -446,13 +439,13 @@ div.rounded-frame img {
 
 .painting-name{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 23px;
 }
 
 .painting-size{
-	font-family: 'AGLettericaCondensedLight', sans-serif;
+	font-family: 'AGLettericaCondensed', sans-serif;
 	padding: 5px;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .painting-year{
@@ -462,7 +455,7 @@ div.rounded-frame img {
 
 .painting-price{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 .gallery-image {

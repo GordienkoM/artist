@@ -45,7 +45,7 @@
 				</li>
 				{% for category in categories %}
 					<li uk-filter-control="[data-color='{{category.name}}']">
-						<a href="#" class="category" >
+						<a href="#" >
 							{% if app.request.locale == 'en' %}
 								{{category.nameEn}}
 							{% else %}
@@ -81,7 +81,8 @@
 									{{ painting.width }}
 									см,
 									{{painting.material}},  
-									{{painting.creationYear}}
+									{{painting.creationYear}} 
+									год
 								</div>
 								{# <div class=" uk-text-center painting-year">{{painting.creationYear}}</div> #}
 								{% if app.session.get('mode_price') %}
