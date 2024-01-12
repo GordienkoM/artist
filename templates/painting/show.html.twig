@@ -8,7 +8,7 @@
 
 {% block body %}
 
-	<div   class="uk-child-width-expand@s " uk-grid>
+	<div   class="uk-child-width-expand@s uk-text-center " uk-grid>
 		<div id="image-viewer">
 			<ul id="main-image" class="uk-switcher">
 				{% for image in painting.paintingImages %}
@@ -27,33 +27,28 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<div class="">
+		<div class="uk-text-center">
 			<div>
-				<h1 class="">{{painting.name}}</h1>
+				<h1 class="uk-text-decoration-none">{% trans %}Картина{% endtrans %} «{{painting.name}}»</h1>
 				<div>
+					<p>{% trans %}Описание работы{% endtrans %}</p>
 					<p class="uk-margin-top">
 						{% trans %}Артикл{% endtrans %}:
-						{{painting.number}}
+						{{painting.alt}}
 					</p>
-					<p class="">
-						{% trans  %}Размер{% endtrans %}:
-						{{ painting.hight}}
-						X
-						{{ painting.width }}
-						{% trans %}см{% endtrans %}
-					</p>
-					<p class="">
-						{% trans %}Материал{% endtrans %}:
-						{{ painting.material }}
-						
-						{% trans %}Год создания{% endtrans %}:
-						{{ painting.creationYear }}
+					<p class="uk-text-center">
+						{{ painting.material }}.  
+						{{ painting.hight}} 
+						X 
+						{{ painting.width }}.  
+						{{painting.creationYear}} 
+						{% trans %}год{% endtrans %}
 					</p>
 				</div>
 
-				<p>{{ painting.price }}
-					{% trans %}рублей{% endtrans %}
-				</p>
+				{% if app.session.get('mode_price') %}
+					<div class=" uk-text-center painting-price">{{painting.price}} р</div>
+				{% endif %}
 			</div>
 			<div>
 				<ul id="viewer-switcher" class="uk-subnav uk-subnav-pill" uk-switcher="connect: #main-image">
@@ -64,7 +59,20 @@
 					{% endfor %}
 				</ul>
 			</div>
+
+			<div class="uk-text-center">
+				<a class="" href="{{ path('price_mode') }}">
+					{% if app.session.get('mode_price') %}
+						{% trans %}Просмотр в режиме выставки{% endtrans %}
+					{% else %}
+						{% trans %}Показать цены{% endtrans %}
+					{% endif %}				
+				</a>
+			</div>
 		</div>
+	</div>
+	<div>
+	
 	</div>
 
 {% endblock %}

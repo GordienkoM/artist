@@ -23,11 +23,11 @@
 	</div>
 	<div id="gallery">
 		{% if app.session.get('mode_price') %}
-			<div class="uk-text-center uk-margin-bottom" uk-grid >
-				<p class="copy-phrase uk-width-auto@m">
+			<div class="uk-margin-bottom uk-margin-left" uk-grid >
+				<p class="copy-phrase uk-text-center">
 					{% trans %}Вы можете приобрести картину или заказать печать копии на холсте{% endtrans %}
 				</p>
-				<div class="uk-width-expand@m uk-text-center">
+				<div class="uk-text-center">
 					<a class="mode-price-button" href="{{ path('price_mode') }}">				
 						{% trans %}Подробнее{% endtrans %}			
 					</a>
