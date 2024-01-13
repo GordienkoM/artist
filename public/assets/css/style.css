@@ -736,6 +736,34 @@ div.rounded-frame img {
 	height: 100%;
 }
 
+#show-painting-name{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 31px;
+	text-transform: none;
+}
+
+#show-painting-description{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+}
+
+#show-painting-price{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 23px;
+}
+
+#paintings-show-small {
+	margin-top: -20px;
+	padding-bottom: 100px;
+}
+
+.show-painting-button{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+
 .painting-show-small {
 	width: 100px;
 	height: 10px;

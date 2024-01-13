@@ -44,6 +44,30 @@ class PaintingController extends AbstractController
         return $this->redirectToRoute('paintings');
     }
 
+    #[Route('/painting/mode/{id}', name: 'price_mode_show_page')]
+    public function modePriceDisplayShowPage(Request $request, Painting $painting)
+    {
+        //session_start
+        $session=$request->getSession();
+        if (!$session->has('mode_price')) {
+            $session->set('mode_price', false);
+        }
+        if ($session->get('mode_price')) {
+            $session->set('mode_price', false);
+        }else{
+            $session->set('mode_price', true);
+        }
+
+        //return show painting page
+        if (!$painting) {
+            return $this->redirectToRoute('paintings');
+        }
+        return $this->render('painting/show.html.twig', [
+            'painting' => $painting,
+        ]);
+    }
+
+
     #[Route('/painting/{id}', name: 'painting_show')]
     public function showPainting(Painting $painting): Response
     {
