@@ -51,6 +51,15 @@
 					<div id="show-painting-price" class=" uk-text-center">{{painting.price}} р</div>
 				{% endif %}
 			</div>
+			<div class="uk-text-center">
+				<a class="show-painting-button" href="{{ path('price_mode_show_page', {'id': painting.id}) }}">
+					{% if app.session.get('mode_price') %}
+						{% trans %}Просмотр в режиме выставки{% endtrans %}
+					{% else %}
+						{% trans %}Показать цены{% endtrans %}
+					{% endif %}				
+				</a>
+			</div>
 			<div id="paintings-show-small" class="uk-text-center" uk-grid>
 				<div class="uk-width-expand@m"></div>
 				<div class="uk-width-auto@m">
@@ -65,20 +74,18 @@
 				<div class="uk-width-expand@m"></div>
 			</div>
 
-
-			<div class="uk-text-center">
-				<a class="show-painting-button" href="{{ path('price_mode_show_page', {'id': painting.id}) }}">
-					{% if app.session.get('mode_price') %}
-						{% trans %}Просмотр в режиме выставки{% endtrans %}
-					{% else %}
-						{% trans %}Показать цены{% endtrans %}
-					{% endif %}				
-				</a>
-			</div>
 		</div>
 	</div>
-	<div>
-	
-	</div>
+	{# <div>
+		<div>
+			<div>
+				<a class="show-painting-bottom-buttons" href="{{ path('next_painting_show', {'id': painting.id}) }}"
+					{% trans %}К предыдущей работе >{% endtrans %}
+				</a>
+			</div>
+			<div>
+			</div>	
+		</div>
+	</div> #}
 
 {% endblock %}

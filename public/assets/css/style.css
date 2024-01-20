@@ -763,6 +763,12 @@ div.rounded-frame img {
 	text-transform: uppercase;
 }
 
+.show-painting-bottom-buttons{
+	font-family: 'AGLettericaCondensed', sans-serif;
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
 
 .painting-show-small {
 	width: 100px;

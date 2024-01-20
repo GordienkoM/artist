@@ -28,6 +28,18 @@ class PaintingController extends AbstractController
         ]);
     }
 
+    #[Route('/painting/next/{id}', name: 'next_painting_show')]
+    public function nextPaintingShow(Painting $painting): Response
+    {
+        if (!$painting) {
+            return $this->redirectToRoute('paintings');
+        }
+        return $this->render('painting/show.html.twig', [
+            'painting' => $painting,
+        ]);
+    }
+
+
     #[Route('/painting/mode', name: 'price_mode')]
     public function modePriceDisplay(Request $request)
     {
