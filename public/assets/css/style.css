@@ -29,7 +29,7 @@ html a:hover {
 
 body {
 
-	font-size: 19px;
+	font-size: 25px;
 
 	font-family: 'Arial Narrow', sans-serif;
 	/* background-color: var(--white); */
@@ -305,14 +305,19 @@ address {
 /*-------------------------*/
 
 #lessons-section {
+	color: var(--black-text);
 	padding-right: 100px;
 	padding-left: 100px;
 }
 
 .lessons-section-header{
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	text-align: center;
+	color: var(--black-text);
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
 }
 
 

@@ -64,13 +64,21 @@
 					</div>
 					<div>
 						<h3 class="lessons-section-header">{% trans %}Готовые уроки и курсы{% endtrans %}</h3>
-						<p>{% trans %}Программа уроков и курсов является аналогом программ художественных колледжей, составлена она с учетом академических знаний, советов старых мастеров и добавлением личного опыта.{% endtrans %}</p>
-						<p>{% trans %}Я веду уроки и курсы по разным направлениям: рисунок, живопись, цветоведение, колористика, композиция для новичков и опытных учащихся. {% endtrans %}</p>
-						<p>{% trans %}Например, на уроках рисунка я даю знания о законах перспективы, светотеневой передачи; учу, как строить куб, призму, конус, шар, цилиндр и другие фигуры, а также гипсовые головы, портреты, фигуру человека; как рисовать интерьеры, пейзажи и др. {% endtrans %}</p>
-						<p>{% trans %}На занятиях по живописи научу вас писать этюды, картины. На курсе цветоведения и колористики изучите законы цветопередачи и колорита. {% endtrans %}</p>
-						<p>{% trans %}На занятиях по композиции — законы композиции. Будет много интересных заданий. {% endtrans %}</p>
-						<p>{% trans %}Вы можете приобрести уроки живописи акварелью, гуашью, акрилом, темперой, маслом, пастелью, цветными карандашами в различных техниках и для разного возраста. {% endtrans %}</p>
-						<p>{% trans %}Можно приобрести уроки с обратной связью. {% endtrans %}</p>
+						<p>
+							<div>{% trans %}На этом сайте вы можете приобрести:{% endtrans %}</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}уроки и курсы для поступления в художественные ВУЗы, они составлены на основе специальных программ и моего опыта,{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}уроки для души и удовольствия в различных техниках и для разного возраста.{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Уроки можно приобрести с обратной связью и без обратной связи.{% endtrans %}
+							</div>
+						</p>
 
 						{# <div class="uk-text-center"><a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a></div> #}
 					</div>
@@ -79,17 +87,36 @@
 			<div>
 				<div>
 					<div class="lessons-section-image">
-						<img src="{{ asset('assets/img/online.jpg') }}" alt="Quatre femmes avec des tableaux dans les main, de l'eau et des bateaux derrière eux">
+						<img src="{{ asset('assets/img/online.jpg') }}" alt="">
 					</div>
 					<div>
-						<h3 class="lessons-section-header">{% trans %}Онлай-занятия инидивидуальные и в мини-группе{% endtrans %}</h3>
-						<p>{% trans %}Занимаюсь дистанционно с двух камер, вы видите меня и работу одновременно. Работаю с учениками с нуля, новичками и с опытными. {% endtrans %}</p>
-						<p>{% trans %}Пошагово все объясняю, показываю, вы повторяете, далее я вас проверяю, даю рекомендации, вы исправляете и так далее. {% endtrans %}</p>
-						<p>{% trans %}Рисую вместе с вами, легко и понятно, показывая и объясняя каждый шаг, как что делать. Поэтому у всех получается, даже если никогда не рисовали. {% endtrans %}</p>
-						<p>{% trans %}У меня занимаются ученики со всей России и со всего мира. {% endtrans %}</p>
-						<p>{% trans %}Есть два формата индивидуально и в мини-группе (2-3 человека). {% endtrans %}</p>
-						<p>{% trans %}Я готовлю студентов к поступлению в художественные школы, колледжи или ВУЗы, подготовку веду по академической программе, дополняя своим опытом и авторскими разработками. {% endtrans %}</p>
-						<p>{% trans %}Есть группы по разным направлениям: академический рисунок, скетчинг, натюрморт, портрет, пейзаж, аниме, комиксы, пластическая анатомия, живопись маслом, японская живопись, роспись, и т. д. {% endtrans %}</p>
+						<h3 class="lessons-section-header">{% trans %}Индивидуальные онлайн-занятия и в мини-группе{% endtrans %}</h3>
+						<p>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="20" width="20" >
+								{% trans %}Обучаю рисовать с нуля, новичков и опытных!{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="20" width="20" >
+								{% trans %}Занимаюсь дистанционно с двух камер, вы видите меня и работу одновременно.{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="20" width="20" >
+								{% trans %}По шагам доступно все объясняю и показываю{% endtrans %}
+								<img src="{{ asset('assets/img/icons/right_arrow.png') }}" alt="" height="18" width="20" >
+								{% trans %}вы повторяете {% endtrans %}
+								<img src="{{ asset('assets/img/icons/right_arrow.png') }}" alt="" height="18" width="20" >
+								{% trans %}я проверяю {% endtrans %}
+								<img src="{{ asset('assets/img/icons/right_arrow.png') }}" alt="" height="18" width="20" >
+								{% trans %}даю рекомендации {% endtrans %}
+								<img src="{{ asset('assets/img/icons/right_arrow.png') }}" alt="" height="18" width="20" >
+								{% trans %}вы исправляете и так далее. {% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Поэтому у всех получается, даже если никогда не рисовали.{% endtrans %}
+							</div>
+						</p>
 
 						{# <div class="uk-text-center"><a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a></div> #}
 					</div>
@@ -101,11 +128,26 @@
 						<img src="{{ asset('assets/img/material.jpg') }}" alt="Un enfant qui dessine des hérissons">
 					</div>
 					<div>
-						<h3 class="lessons-section-header">{% trans %}Бесплатные уроки и учебный материял{% endtrans %}</h3>
-						<p>{% trans %}На этой страничке публикуются интересные факты о живописи, рисунке, композиции, так же биографии художников. Сведения собраны из библиотек: Российской государственной библиотеки, библиотеки им. В. И. Сурикова, научная библиотека Российской академии художеств в Санкт-Петербурге и др. {% endtrans %}</p>
-						<p>{% trans %}Вас ждет обзор любимых книг на тему искусства, живописи, рисунка. Поговорим о живописи. Понаблюдаем за картинами, как располагаются цвета, тона, формы и линии, и как создается эстетический образ. {% endtrans %}</p>
-						<p>{% trans %}Изучим графику — вид изобразительного искусства, использующий в качестве основных изобразительных средств линии, штрихи, пятна и точки. {% endtrans %}</p>
-						<p>{% trans %}Поговорим об искусстве, важнейшая функция которого заключается в удовлетворении двух духовных потребностей человека: любви к прекрасному и желании получать эстетическое удовольствие. {% endtrans %}</p>
+						<h3 class="lessons-section-header">{% trans %}Бесплатные уроки и учебный материал{% endtrans %}</h3>
+						<p>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Интересные факты о живописи, рисунке, композиции полезные для рисования.{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Цитаты и фрагменты, обзор любимых книг на тему искусства, живописи, рисунка.{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Интересные факты из биографии художников.{% endtrans %}
+							</div>
+							<div>
+								<img src="{{ asset('assets/img/icons/checkmarks.png') }}" alt="" height="17" width="17" >
+								{% trans %}Анализ картин: как располагаются цвета, тона, формы и линии, и как создается эстетический образ и многое другое.{% endtrans %}
+							</div>
+					
+						</p>
 						{# <div class="uk-text-center"><a class="uk-button uk-button-secondary uk-button uk-text-center" href="{{ path('home') }}">{% trans %}Подробнее{% endtrans %}</a></div> #}
 					</div>
 				</div>
