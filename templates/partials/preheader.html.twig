@@ -55,7 +55,7 @@
     </div>
     
     {# languages #}
-    {# <div id="locales" class="uk-navbar-right uk-margin-bottom">
+    <div id="locales" class="uk-navbar-right uk-margin-right">
     {% for locale in locales %}
         <ul class="uk-navbar-nav">
             {% if locale != app.request.locale %}
@@ -67,7 +67,9 @@
             </li>
         </ul>
     {% endfor %}
-    </div> #}
+    </div>
+
+
 </div>
 <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
     <div class="uk-offcanvas-bar">

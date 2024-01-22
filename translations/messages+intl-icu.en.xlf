@@ -17,6 +17,308 @@
         <source>События</source>
         <target>Events</target>
       </trans-unit>
+      <trans-unit id="b_fcKbu" resname="Смотреть все фото и видео">
+        <source>Смотреть все фото и видео</source>
+        <target>See all photos and videos</target>
+      </trans-unit>
+      <trans-unit id="eshBB8E" resname="Смотреть">
+        <source>Смотреть</source>
+        <target>Watch</target>
+      </trans-unit>
+      <trans-unit id="SMLBsYV" resname="Все фото и видео">
+        <source>Все фото и видео</source>
+        <target>All photos and videos</target>
+      </trans-unit>
+      <trans-unit id="6vQfL2R" resname="К альбомам">
+        <source>К альбомам</source>
+        <target>to albums</target>
+      </trans-unit>
+      <trans-unit id="lPnYrqo" resname="О хужожнике">
+        <source>О хужожнике</source>
+        <target>About the artist</target>
+      </trans-unit>
+      <trans-unit id="AfPc0WS" resname="О художнике">
+        <source>О художнике</source>
+        <target>About the artist</target>
+      </trans-unit>
+      <trans-unit id="qL4Pflr" resname="Ирина Владимировна Козлова-Кузнецова">
+        <source>Ирина Владимировна Козлова-Кузнецова</source>
+        <target>Irina Kozlova-Kuznetsova</target>
+      </trans-unit>
+      <trans-unit id="7m_6NZ0" resname="Родилась в 1974 г. в России, городе Северодвинске Архангельской области. Переехала в Воронеж в 2003 году.">
+        <source>Родилась в 1974 г. в России, городе Северодвинске Архангельской области. Переехала в Воронеж в 2003 году.</source>
+        <target>She born in 1974 in Russia, the city of Severodvinsk, Arkhangelsk region. She moved to Voronezh in 2003.</target>
+      </trans-unit>
+      <trans-unit id="Qyk2kkp" resname="В 1992 году закончила педагогический колледж в Северодвинске по специальности учитель рисования и учитель начальных классов.">
+        <source>В 1992 году закончила педагогический колледж в Северодвинске по специальности учитель рисования и учитель начальных классов.</source>
+        <target>Irina graduated from a pedagogical college in Severodvinsk with a degree in art teacher and primary school teacher in 1992.</target>
+      </trans-unit>
+      <trans-unit id="TsNN6Y4" resname="В 2012 году закончила Воронежское художественное училище по специальности «Живопись, художник-живописец», педагог — Лавров Александр Николаевич. Далее обучалась &#10;частным образом в мастерских заслуженных художников.">
+        <source>В 2012 году закончила Воронежское художественное училище по специальности «Живопись, художник-живописец», педагог — Лавров Александр Николаевич. Далее обучалась 
+частным образом в мастерских заслуженных художников.</source>
+        <target>She graduated from the Voronezh Art College with a degree in Painting in 2012, her teacher is Alexander Nikolaevich Lavrov. Further studied was privately in the studios of distinguished artists.</target>
+      </trans-unit>
+      <trans-unit id="5WtLYfm" resname="Работы Ирины находятся в частных коллекциях и за рубежом. Картины часто пишутся в мастерской, но чаще работает на пленэре.&#10;Преподает рисунок, живопись и композицию.">
+        <source>Работы Ирины находятся в частных коллекциях и за рубежом. Картины часто пишутся в мастерской, но чаще работает на пленэре.
+Преподает рисунок, живопись и композицию.</source>
+        <target>Irina's works in new collections. Paintings are often painted in the studio, but most often in the open air.
+Irina teaches drawing, painting and composition.</target>
+      </trans-unit>
+      <trans-unit id="SIR4QYk" resname="Участие в выставках, фестивалях, конкурсах:">
+        <source>Участие в выставках, фестивалях, конкурсах:</source>
+        <target>Participation in exhibitions, festivals, competitions:</target>
+      </trans-unit>
+      <trans-unit id=".L1Hv19" resname="Творчество художницы посвящено России – неповторимому очарованию старых российских городов, деревень. притягательной красоте мира &#10;русской природы. Здесь и пейзажи, и натюрморты, и всеми любимые цветы.">
+        <source>Творчество художницы посвящено России – неповторимому очарованию старых российских городов, деревень. притягательной красоте мира 
+русской природы. Здесь и пейзажи, и натюрморты, и всеми любимые цветы.</source>
+        <target>The artist’s work is dedicated to Russia – the unique charm of old Russian cities and villages, the attractive beauty of the world.
+Russian nature. There are landscapes, still lifes, and everyone’s favorite flowers.</target>
+      </trans-unit>
+      <trans-unit id="OSgcO_0" resname="Картины Ирины раскрывают зрителю красоту окружающего мира, видно, как она изучает натуру, ищет художественную выразительность, &#10;стремится к развитию, которое отличает ее творчество.">
+        <source>Картины Ирины раскрывают зрителю красоту окружающего мира, видно, как она изучает натуру, ищет художественную выразительность, 
+стремится к развитию, которое отличает ее творчество.</source>
+        <target>Irina’s paintings reveal to the viewer the beauty of the surrounding world; one can see how she studies nature, seeks artistic expression,
+strives for the development that distinguishes her work.</target>
+      </trans-unit>
+      <trans-unit id="csxNehA" resname="Художница работает преимущественно в жанре пейзажа, натюрморта и портрета, опираясь на реалистические и импрессионистические традиции в искусстве">
+        <source>Художница работает преимущественно в жанре пейзажа, натюрморта и портрета, опираясь на реалистические и импрессионистические традиции в искусстве</source>
+        <target>The artist works primarily in the genre of landscape, still life and portrait, drawing on realistic and impressionistic traditions in art.</target>
+      </trans-unit>
+      <trans-unit id=".cAeG7y" resname="Героями картин часто становятся простые люди, родственники с разными судьбами, характерами и увлечениями. В портретах художницы &#10;правдиво передают не только особенности внешнего облика, но и улавливают индивидуальное своеобразие личности человека.">
+        <source>Героями картин часто становятся простые люди, родственники с разными судьбами, характерами и увлечениями. В портретах художницы 
+правдиво передают не только особенности внешнего облика, но и улавливают индивидуальное своеобразие личности человека.</source>
+        <target>The heroes of the paintings are often ordinary people, relatives with different destinies, characters and hobbies. The artist’s portraits truthfully convey not only the features of the appearance, but also capture the individual uniqueness of a person’s personality.</target>
+      </trans-unit>
+      <trans-unit id="AdDqpD." resname="Привлекают внимание тематические натюрморты, передающие плодородие и богатство природы, свежестью и простотой отличаются красочные натюрморты с цветами, вазами, кувшинами, разнообразные по характеристике, манере письма и согревающие своим цветом пионы, &#10;розы, сирень, маки и нежная полевые цветы, и причудливо изогнувшиеся цветы жасмина...">
+        <source>Привлекают внимание тематические натюрморты, передающие плодородие и богатство природы, свежестью и простотой отличаются красочные натюрморты с цветами, вазами, кувшинами, разнообразные по характеристике, манере письма и согревающие своим цветом пионы, 
+розы, сирень, маки и нежная полевые цветы, и причудливо изогнувшиеся цветы жасмина...</source>
+        <target>Thematic still lifes, conveying the fertility and richness of nature colorful still lifes with flowers, vases, jugs, varied in characteristics, painting style and peonies that warm with their color, attract attention with their freshness and simplicity,
+roses, lilacs, poppies and delicate wildflowers, and intricately curved jasmine flowers...</target>
+      </trans-unit>
+      <trans-unit id="2BNOBt2" resname="Смотреть галерею">
+        <source>Смотреть галерею</source>
+        <target>View gallery</target>
+      </trans-unit>
+      <trans-unit id="pt_k26a" resname="Уроки рисования">
+        <source>Уроки рисования</source>
+        <target>Drawing lessons</target>
+      </trans-unit>
+      <trans-unit id="2N7XvHd" resname="Готовые уроки и курсы">
+        <source>Готовые уроки и курсы</source>
+        <target>Ready-made lessons and courses</target>
+      </trans-unit>
+      <trans-unit id="R3P4hq7" resname="На этом сайте вы можете приобрести:">
+        <source>На этом сайте вы можете приобрести:</source>
+        <target>On this site you can purchase:</target>
+      </trans-unit>
+      <trans-unit id="7Rs51UX" resname="уроки и курсы для поступления в художественные ВУЗы, они составлены на основе специальных программ и моего опыта,">
+        <source>уроки и курсы для поступления в художественные ВУЗы, они составлены на основе специальных программ и моего опыта,</source>
+        <target>lessons and courses for admission to art universities, they are compiled on the basis of special programs and my experience,</target>
+      </trans-unit>
+      <trans-unit id="AGCPWi2" resname="уроки для души и удовольствия в различных техниках и для разного возраста.">
+        <source>уроки для души и удовольствия в различных техниках и для разного возраста.</source>
+        <target>lessons for the soul and pleasure in various techniques and for different ages.</target>
+      </trans-unit>
+      <trans-unit id="aqc5SWD" resname="Уроки можно приобрести с обратной связью и без обратной связи.">
+        <source>Уроки можно приобрести с обратной связью и без обратной связи.</source>
+        <target>Lessons can be purchased with or without feedback.</target>
+      </trans-unit>
+      <trans-unit id="CNNjACu" resname="Индивидуальные онлайн-занятия и в мини-группе">
+        <source>Индивидуальные онлайн-занятия и в мини-группе</source>
+        <target>Individual online classes and mini-group classes</target>
+      </trans-unit>
+      <trans-unit id="Ma3rOE2" resname="Обучаю рисовать с нуля, новичков и опытных!">
+        <source>Обучаю рисовать с нуля, новичков и опытных!</source>
+        <target>I teach drawing from scratch, beginners and experienced!</target>
+      </trans-unit>
+      <trans-unit id="tInG9nm" resname="Занимаюсь дистанционно с двух камер, вы видите меня и работу одновременно.">
+        <source>Занимаюсь дистанционно с двух камер, вы видите меня и работу одновременно.</source>
+        <target>I study remotely from two cameras, you see me and my work at the same time.</target>
+      </trans-unit>
+      <trans-unit id="YzJh24F" resname="По шагам доступно все объясняю и показываю">
+        <source>По шагам доступно все объясняю и показываю</source>
+        <target>I explain and show everything step by step</target>
+      </trans-unit>
+      <trans-unit id="HRs491S" resname="вы повторяете">
+        <source>вы повторяете</source>
+        <target>you repeat</target>
+      </trans-unit>
+      <trans-unit id="FksN.4M" resname="я проверяю">
+        <source>я проверяю</source>
+        <target>I'm checking</target>
+      </trans-unit>
+      <trans-unit id="pm3uJ9O" resname="даю рекомендации">
+        <source>даю рекомендации</source>
+        <target>I give recommendations</target>
+      </trans-unit>
+      <trans-unit id="HpJxZIZ" resname="вы исправляете и так далее.">
+        <source>вы исправляете и так далее.</source>
+        <target>you correct and so on.</target>
+      </trans-unit>
+      <trans-unit id="6O2S_Hi" resname="Поэтому у всех получается, даже если никогда не рисовали.">
+        <source>Поэтому у всех получается, даже если никогда не рисовали.</source>
+        <target>That's why, everyone can do it, even if they have never drawn.</target>
+      </trans-unit>
+      <trans-unit id="IAf.zbj" resname="Бесплатные уроки и учебный материал">
+        <source>Бесплатные уроки и учебный материал</source>
+        <target>Free lessons and educational material</target>
+      </trans-unit>
+      <trans-unit id="NPiA21V" resname="Интересные факты о живописи, рисунке, композиции полезные для рисования.">
+        <source>Интересные факты о живописи, рисунке, композиции полезные для рисования.</source>
+        <target>Interesting facts about painting, drawing, compositions useful for drawing.</target>
+      </trans-unit>
+      <trans-unit id="0V1a.cT" resname="Цитаты и фрагменты, обзор любимых книг на тему искусства, живописи, рисунка.">
+        <source>Цитаты и фрагменты, обзор любимых книг на тему искусства, живописи, рисунка.</source>
+        <target>Quotes and fragments, review of favorite books on the topic of art, painting, drawing.</target>
+      </trans-unit>
+      <trans-unit id="6cOCgov" resname="Интересные факты из биографии художников.">
+        <source>Интересные факты из биографии художников.</source>
+        <target>Interesting facts from the biography of artists.</target>
+      </trans-unit>
+      <trans-unit id="THEp.tW" resname="Анализ картин: как располагаются цвета, тона, формы и линии, и как создается эстетический образ и многое другое.">
+        <source>Анализ картин: как располагаются цвета, тона, формы и линии, и как создается эстетический образ и многое другое.</source>
+        <target>Analysis of paintings: how colors, tones, shapes and lines are arranged, and how an aesthetic image is created and much more.</target>
+      </trans-unit>
+      <trans-unit id="cQ7uTr2" resname="О ХУДОЖНИКЕ">
+        <source>О ХУДОЖНИКЕ</source>
+        <target>ABOUT THE ARTIST</target>
+      </trans-unit>
+      <trans-unit id="l4GpO3W" resname="Ирина Козлова-Кузнецова -">
+        <source>Ирина Козлова-Кузнецова -</source>
+        <target>Irina Kozlova-Kuznetsova -</target>
+      </trans-unit>
+      <trans-unit id="lhVa4PR" resname="Ирина Козлова-Кузнецова — художник-живописец, преподаватель рисунка и живописи.">
+        <source>Ирина Козлова-Кузнецова — художник-живописец, преподаватель рисунка и живописи.</source>
+        <target>Irina Kozlova-Kuznetsova is an artist-painter, teacher of drawing and painting.</target>
+      </trans-unit>
+      <trans-unit id="VCtmMZ_" resname="Работает в живописных направлениях реализм и импрессионизм.">
+        <source>Работает в живописных направлениях реализм и импрессионизм.</source>
+        <target>She works in the painting directions of realism and impressionism.</target>
+      </trans-unit>
+      <trans-unit id="m9C.3E3" resname="Основной материал — холст, масло.">
+        <source>Основной материал — холст, масло.</source>
+        <target>The main material is oil on canvas.</target>
+      </trans-unit>
+      <trans-unit id="_jO_TOT" resname="Активный участник всероссийских, областных, городских и региональных выставок.">
+        <source>Активный участник всероссийских, областных, городских и региональных выставок.</source>
+        <target>Active participant in all-Russian, regional, city and regional exhibitions.</target>
+      </trans-unit>
+      <trans-unit id="wzK_jsg" resname="«Пишу в позитивном настроении, стараюсь впитать красоту природы и отразить это на картине».">
+        <source>«Пишу в позитивном настроении, стараюсь впитать красоту природы и отразить это на картине».</source>
+        <target>“I paint in a positive mood, I try to absorb the beauty of nature and reflect it in the picture.”</target>
+      </trans-unit>
+      <trans-unit id="NfW9NJu" resname="Ключевая тема картин — изображение жизни, как она есть, через свободное импрессионистическое-реалистичное видение различных состояний природы, натюрмортов и портретов.">
+        <source>Ключевая тема картин — изображение жизни, как она есть, через свободное импрессионистическое-реалистичное видение различных состояний природы, натюрмортов и портретов.</source>
+        <target>The key theme of the paintings is the depiction of life as it is, through a free impressionistic-realistic vision of various states of nature, still lifes and portraits.</target>
+      </trans-unit>
+      <trans-unit id="uWoRJBQ" resname="Российские деревни, улочки родного города, контраст утра и ночи, знойного дня и дождливого вечера, будней и выходных, достопримечательностей и заброшенных мест города дают возможность расширить горизонты восприятия и показать, как энергетика города и деревни, лесов и полей заряжает добром и любовью.">
+        <source>Российские деревни, улочки родного города, контраст утра и ночи, знойного дня и дождливого вечера, будней и выходных, достопримечательностей и заброшенных мест города дают возможность расширить горизонты восприятия и показать, как энергетика города и деревни, лесов и полей заряжает добром и любовью.</source>
+        <target>Russian villages, the streets of one’s hometown, the contrast of morning and night, a hot day and a rainy evening, weekdays and weekends, sights and abandoned places in the city provide an opportunity to expand the horizons of perception and show how the energy of the city and the countryside, forests and fields charges with goodness and love.</target>
+      </trans-unit>
+      <trans-unit id="PCwuDbW" resname="Автор убеждена, что живопись природы способна воодушевить зрителя, обратить его внимание на красоту окружающего мира и вдохновить на творческие свершения.">
+        <source>Автор убеждена, что живопись природы способна воодушевить зрителя, обратить его внимание на красоту окружающего мира и вдохновить на творческие свершения.</source>
+        <target>The author is convinced that nature painting can inspire the viewer, draw his attention to the beauty of the world around him and inspire him to creative achievements.</target>
+      </trans-unit>
+      <trans-unit id="gD10Fp2" resname="Цвет и манера письма — понятия неразделимые, они для художницы являлся воплощением чувств, в нём проявляется яркий темперамент ее личности.">
+        <source>Цвет и манера письма — понятия неразделимые, они для художницы являлся воплощением чувств, в нём проявляется яркий темперамент ее личности.</source>
+        <target>Color and brushwork are inseparable concepts; for the artist, they are the embodiment of feelings, and it reveals the bright temperament of her personality.</target>
+      </trans-unit>
+      <trans-unit id="DFKJ58A" resname="Ее живопись пронизана эстетикой импрессионизма, чувственна и эмоциональна.">
+        <source>Ее живопись пронизана эстетикой импрессионизма, чувственна и эмоциональна.</source>
+        <target>Her painting is permeated with the aesthetics of impressionism, sensual and emotional.</target>
+      </trans-unit>
+      <trans-unit id="WVif4qV" resname="Подробнее">
+        <source>Подробнее</source>
+        <target>More details</target>
+      </trans-unit>
+      <trans-unit id="9pyycfH" resname="Галерея">
+        <source>Галерея</source>
+        <target>Gallery</target>
+      </trans-unit>
+      <trans-unit id="Y_pACYf" resname="Просмотр в режиме выставки">
+        <source>Просмотр в режиме выставки</source>
+        <target>Exhibition View</target>
+      </trans-unit>
+      <trans-unit id="tkn6_1l" resname="Показать цены">
+        <source>Показать цены</source>
+        <target>Show prices</target>
+      </trans-unit>
+      <trans-unit id="DLON6xE" resname="Вы можете приобрести картину или заказать печать копии на холсте">
+        <source>Вы можете приобрести картину или заказать печать копии на холсте</source>
+        <target>You can purchase a painting or order a copy printed on canvas</target>
+      </trans-unit>
+      <trans-unit id="IVgWv0I" resname="Все">
+        <source>Все</source>
+        <target>All</target>
+      </trans-unit>
+      <trans-unit id="d8m2fDA" resname="Картина">
+        <source>Картина</source>
+        <target>Painting</target>
+      </trans-unit>
+      <trans-unit id="UHIWAsL" resname="Описание работы">
+        <source>Описание работы</source>
+        <target>Description of work</target>
+      </trans-unit>
+      <trans-unit id="nBJjWyv" resname="год">
+        <source>год</source>
+        <target>year</target>
+      </trans-unit>
+      <trans-unit id="C.D8sv9" resname="Информация">
+        <source>Информация</source>
+        <target>Information</target>
+      </trans-unit>
+      <trans-unit id="kuTiUVT" resname="Картинная галерея">
+        <source>Картинная галерея</source>
+        <target>Art Gallery</target>
+      </trans-unit>
+      <trans-unit id=".KjVqjw" resname="Контакты">
+        <source>Контакты</source>
+        <target>Contacts</target>
+      </trans-unit>
+      <trans-unit id="zbdvUhN" resname="В контакте">
+        <source>В контакте</source>
+        <target>Vkontakte</target>
+      </trans-unit>
+      <trans-unit id="5yZ.QK4" resname="Группа в контакте">
+        <source>Группа в контакте</source>
+        <target>Vkontakte community</target>
+      </trans-unit>
+      <trans-unit id="Xc6wsQu" resname="Присоединяйтесь к нам">
+        <source>Присоединяйтесь к нам</source>
+        <target>Join us</target>
+      </trans-unit>
+      <trans-unit id="dw7DJ2Q" resname="Ирина Козлова - Кузнецова">
+        <source>Ирина Козлова - Кузнецова</source>
+        <target>Irina Kozlova - Kuznetsova</target>
+      </trans-unit>
+      <trans-unit id="SxPFkQU" resname="художник-живописец">
+        <source>художник-живописец</source>
+        <target>artist-painter</target>
+      </trans-unit>
+      <trans-unit id="0yjlPcR" resname="Главная">
+        <source>Главная</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="Ew5F4YM" resname="Войти в учётную запись">
+        <source>Войти в учётную запись</source>
+        <target>Login to your account</target>
+      </trans-unit>
+      <trans-unit id="yZEBFF." resname="Ваша учётная запись">
+        <source>Ваша учётная запись</source>
+        <target>Your account</target>
+      </trans-unit>
+      <trans-unit id="VpDC5ju" resname="Выйти">
+        <source>Выйти</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="7kmxwHb" resname="Пороль">
+        <source>Пороль</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="j8mrLus" resname="Войти">
+        <source>Войти</source>
+        <target>login</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
