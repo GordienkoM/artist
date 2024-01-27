@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	{{ painting.name }}
+	{% if (app.request.locale == 'en') and (painting.nameEn is not empty) %}
+		{{painting.nameEn}}
+	{% else %}
+		{{painting.name}}
+	{% endif %}
 {% endblock %}
 
 {% block galleryActive %}id="page-active"{% endblock %}
@@ -29,16 +33,30 @@
 		</div>
 		<div class="uk-text-center">
 			<div>
-				<h1 id="show-painting-name">{% trans %}Картина{% endtrans %} «{{painting.name}}»</h1>
+				<h1 id="show-painting-name">
+					{% if (app.request.locale == 'en') and (painting.nameEn is not empty) %}
+						{{painting.nameEn}}
+					{% else %}
+						{{painting.name}}
+					{% endif %}
+				</h1>
 				<div id="show-painting-description">
 					{% if painting.alt %}
 						<p>{% trans %}Описание работы{% endtrans %}</p>
 						<p class="uk-margin-top">
-							{{painting.alt}}
+							{% if (app.request.locale == 'en') and (painting.altEn is not empty) %}
+								{{painting.altEn}}
+							{% else %}
+								{{painting.alt}}
+							{% endif %}
 						</p>
 					{% endif %}
 					<p class="uk-text-center">
-						{{ painting.material }}.  
+						{% if (app.request.locale == 'en') and (painting.material == 'холст, натянутый на подрамник, масло') %}
+							canvas stretched on a stretcher, oil  
+						{% else %}
+							{{ painting.material }} 
+						{% endif %}						 
 						{{ painting.hight}} 
 						X 
 						{{ painting.width }}.  

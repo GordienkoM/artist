@@ -27,11 +27,11 @@
 				<p class="copy-phrase uk-text-center">
 					{% trans %}Вы можете приобрести картину или заказать печать копии на холсте{% endtrans %}
 				</p>
-				<div class="uk-text-center">
+				{# <div class="uk-text-center">
 					<a class="mode-price-button" href="{{ path('price_mode') }}">				
 						{% trans %}Подробнее{% endtrans %}			
 					</a>
-				</div>
+				</div> #}
 			</div>
 		{% endif %}	
 
@@ -46,7 +46,7 @@
 				{% for category in categories %}
 					<li uk-filter-control="[data-color='{{category.name}}']">
 						<a href="#" >
-							{% if app.request.locale == 'en' %}
+							{% if (app.request.locale == 'en') and (category.nameEn is not empty) %}
 								{{category.nameEn}}
 							{% else %}
 								{{category.name}}
@@ -80,9 +80,13 @@
 									X
 									{{ painting.width }}
 									см,
-									{{painting.material}},  
+									{% if (app.request.locale == 'en') and (painting.material == 'холст, натянутый на подрамник, масло') %}
+										canvas stretched on a stretcher, oil  
+									{% else %}
+										{{ painting.material }} 
+									{% endif %}	
 									{{painting.creationYear}} 
-									год
+									{% trans %}год{% endtrans %}
 								</div>
 								{# <div class=" uk-text-center painting-year">{{painting.creationYear}}</div> #}
 								{% if app.session.get('mode_price') %}
