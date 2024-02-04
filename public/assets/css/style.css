@@ -19,7 +19,7 @@
 html {
 	background: url('../img/Palitra.png') no-repeat top left;
 	background-position: 20px 70px;
-	
+
 }
 
 html a:hover {
@@ -103,7 +103,8 @@ h2 {
 
 h1 {
 	margin-top: 0px;
-	padding-bottom: 15px;;
+	padding-bottom: 15px;
+	;
 }
 
 h3 {
@@ -154,7 +155,7 @@ address {
 	height: 24px;
 }
 
-#locales a{
+#locales a {
 	font-family: 'Open Sans SemiBold', sans-serif;
 	font-size: 19px;
 	color: var(--white);
@@ -180,7 +181,7 @@ address {
 }
 
 
-#burger a svg{
+#burger a svg {
 	color: var(--white);
 	margin-bottom: 25px;
 	margin-right: 10px;
@@ -216,7 +217,7 @@ address {
 	font-size: 18px;
 }
 
-.menu{
+.menu {
 	padding-right: 40px;
 }
 
@@ -228,7 +229,7 @@ address {
 	color: var(--dark-grey);
 }
 
-#page-active{
+#page-active {
 
 	color: var(--black-text);
 }
@@ -258,7 +259,7 @@ address {
 }
 
 .painting {
-	
+
 	width: auto;
 	overflow: hidden;
 }
@@ -312,7 +313,7 @@ address {
 	padding-left: 100px;
 }
 
-.lessons-section-header{
+.lessons-section-header {
 	padding-top: 30px;
 	padding-bottom: 10px;
 	text-align: center;
@@ -343,7 +344,7 @@ address {
 
 }
 
-.image-bord {	
+.image-bord {
 	margin-right: 60px;
 	border-right: 2px solid var(--dark-grey);
 	border-bottom: 2px solid var(--dark-grey);
@@ -351,7 +352,7 @@ address {
 	padding-bottom: 30px;
 }
 
-.artist-name{
+.artist-name {
 	font-size: 30px;
 }
 
@@ -366,7 +367,7 @@ footer {
 
 }
 
-.footer-header{
+.footer-header {
 	font-family: 'Open Sans SemiBold', sans-serif;
 	color: var(--white);
 	font-size: 26px;
@@ -377,8 +378,9 @@ footer div {
 	color: var(--white);
 }
 
-#footer-columns div div, #footer-columns address div{
-margin-bottom: 6px;
+#footer-columns div div,
+#footer-columns address div {
+	margin-bottom: 6px;
 }
 
 #footer-image img {
@@ -400,12 +402,12 @@ div.rounded-frame {
 	border: 2px solid var(--grey-base);
 	border-radius: 15px;
 	/* height: 370px; */
-	
+
 }
 
 div.rounded-frame img {
-	
-	width:auto;
+
+	width: auto;
 }
 
 .mode-price-button {
@@ -422,14 +424,22 @@ div.rounded-frame img {
 	padding-bottom: 5px;
 }
 
-.copy-phrase{
+.mode-price-button-right {
+
+	padding-right: 100px;
+	padding-top: -40px;
+	padding-bottom: 20px;
+}
+
+.copy-phrase {
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	color: var(--black-text);
 }
 
-.painting-categories li a, .uk-subnav-pill>*>:first-child{
+.painting-categories li a,
+.uk-subnav-pill>*>:first-child {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 19px;
 	color: var(--dark-grey);
@@ -440,27 +450,27 @@ div.rounded-frame img {
 /* PAINTINGS        
 /*-------------------------*/
 
-.painting-text{
+.painting-text {
 	padding-top: 20px;
 }
 
-.painting-name{
+.painting-name {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 23px;
 }
 
-.painting-size{
+.painting-size {
 	font-family: 'AGLettericaCondensed', sans-serif;
 	padding: 5px;
 	font-size: 15px;
 }
 
-.painting-year{
+.painting-year {
 	font-family: 'Open Sans Light', sans-serif;
-	font-size: 16px;	
+	font-size: 16px;
 }
 
-.painting-price{
+.painting-price {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 17px;
 }
@@ -480,12 +490,14 @@ div.rounded-frame img {
 	padding-left: 100px;
 }
 
-.event-image, .photo-image{		
+.event-image,
+.photo-image {
 	border-bottom: 2px solid var(--dark-grey);
-	padding-bottom: 20px;;
+	padding-bottom: 20px;
+	;
 }
 
-.event-legend{
+.event-legend {
 	padding-top: 15px;
 	padding-bottom: 5px;
 	padding-left: 25px;
@@ -494,7 +506,7 @@ div.rounded-frame img {
 	color: var(--black-legend);
 }
 
-.return{
+.return {
 	color: var(--grey-text);
 	font-family: 'Open Sans Light', sans-serif;
 	font-size: 23px;
@@ -503,7 +515,7 @@ div.rounded-frame img {
 	padding-bottom: 25px;
 }
 
-.event-header{
+.event-header {
 	padding-left: 15%;
 	padding-right: 15%;
 	font-size: 30px;
@@ -519,10 +531,11 @@ div.rounded-frame img {
 
 	color: var(--black-text);
 	font-family: 'Arial Narrow', sans-serif;
-	font-size: 25px;	
+	font-size: 25px;
 }
-#artist_image{
-	width: 450px ;
+
+#artist_image {
+	width: 450px;
 }
 
 
@@ -561,7 +574,7 @@ div.rounded-frame img {
 	}
 
 
-	.menu{
+	.menu {
 		padding-right: 20px;
 	}
 
@@ -569,8 +582,9 @@ div.rounded-frame img {
 
 		margin-right: 75px;
 		margin-left: 75px;
-		padding-bottom: 10px;;
-	
+		padding-bottom: 10px;
+		;
+
 	}
 
 }
@@ -605,7 +619,7 @@ div.rounded-frame img {
 		padding-bottom: 10px;
 	}
 
-	.menu{
+	.menu {
 		padding-right: 20px;
 	}
 
@@ -613,8 +627,9 @@ div.rounded-frame img {
 
 		margin-right: 50px;
 		margin-left: 50px;
-		padding-bottom: 10px;;
-	
+		padding-bottom: 10px;
+		;
+
 	}
 }
 
@@ -661,8 +676,9 @@ div.rounded-frame img {
 
 		margin-right: 25px;
 		margin-left: 25px;
-		padding-bottom: 5px;;
-	
+		padding-bottom: 5px;
+		;
+
 	}
 }
 
@@ -689,8 +705,9 @@ div.rounded-frame img {
 
 		margin-right: 20px;
 		margin-left: 20px;
-		padding-bottom: 5px;;
-	
+		padding-bottom: 5px;
+		;
+
 	}
 
 }
@@ -713,10 +730,15 @@ div.rounded-frame img {
 }
 
 #main-image img {
-	border-right: 2px solid var(--dark-grey);
-	border-bottom: 2px solid var(--dark-grey);
-	padding-right: 30px;
-	padding-bottom: 30px;
+	aspect-ratio: 1/1;
+	border: 2px solid var(--grey-base);
+	border-radius: 15px;
+	margin-left: 100px;
+	  
+}
+
+.uk-subnav-pill>.uk-active>a{
+    background-color: var(--dark-grey);
 }
 
 #viewer-switcher {
@@ -733,9 +755,8 @@ div.rounded-frame img {
 	visibility: hidden;
 }
 
-.painting-show  img{
+.painting-show img {
 	visibility: visible
-	
 }
 
 .painting-show img {
@@ -743,18 +764,20 @@ div.rounded-frame img {
 	height: 100%;
 }
 
-#show-painting-name{
+#show-painting-name {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 31px;
 	text-transform: none;
 }
 
-#show-painting-description{
+#show-painting-description {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 17px;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
-#show-painting-price{
+#show-painting-price {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 23px;
 }
@@ -764,13 +787,13 @@ div.rounded-frame img {
 	padding-bottom: 100px;
 }
 
-.show-painting-button{
+.show-painting-button {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 }
 
-.show-painting-bottom-buttons{
+.show-painting-bottom-buttons {
 	font-family: 'AGLettericaCondensed', sans-serif;
 	font-size: 19px;
 	text-transform: uppercase;

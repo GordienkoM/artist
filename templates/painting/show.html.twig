@@ -12,13 +12,23 @@
 
 {% block body %}
 
-	<div   class="uk-child-width-expand@s uk-text-center " uk-grid>
-		<div id="image-viewer">
+	<div class="uk-text-right mode-price-button-right">
+		<a class="mode-price-button" href="{{ path('price_mode_show_page', {'id': painting.id}) }}">
+			{% if app.session.get('mode_price') %}
+				{% trans %}Просмотр в режиме выставки{% endtrans %}
+			{% else %}
+				{% trans %}Показать цены{% endtrans %}
+			{% endif %}				
+		</a>
+	</div>
+	<div   class="uk-text-center" uk-grid>
+		<div id="image-viewer"  class="uk-width-auto@m " >
 			<ul id="main-image" class="uk-switcher">
 				{% for image in painting.paintingImages %}
+					{% set imagePath = asset('assets/img/paintings/' ~ image.file) %}
 					<li class="painting-show">
 						<a href="#image_{{image.id}}" uk-toggle>
-							<img src="{{ asset('assets/img/paintings/' ~ image.file) }}" alt="{{ painting.name}}">
+							<img src="{{ imagePath }}" alt="{{ painting.name}}">
 						</a>
 						<!-- Modal Image with close button -->
 						<div id="image_{{image.id}}" uk-modal>
@@ -30,8 +40,9 @@
 					</li>
 				{% endfor %}
 			</ul>
+
 		</div>
-		<div class="uk-text-center">
+		<div class="uk-text-center uk-width-expand@m ">
 			<div>
 				<h1 id="show-painting-name">
 					{% if (app.request.locale == 'en') and (painting.nameEn is not empty) %}
@@ -40,43 +51,37 @@
 						{{painting.name}}
 					{% endif %}
 				</h1>
-				<div id="show-painting-description">
-					{% if painting.alt %}
-						<p>{% trans %}Описание работы{% endtrans %}</p>
-						<p class="uk-margin-top">
-							{% if (app.request.locale == 'en') and (painting.altEn is not empty) %}
-								{{painting.altEn}}
-							{% else %}
-								{{painting.alt}}
-							{% endif %}
-						</p>
-					{% endif %}
-					<p class="uk-text-center">
-						{% if (app.request.locale == 'en') and (painting.material == 'холст, натянутый на подрамник, масло') %}
-							canvas stretched on a stretcher, oil  
-						{% else %}
-							{{ painting.material }} 
-						{% endif %}						 
-						{{ painting.hight}} 
-						X 
-						{{ painting.width }}.  
-						{{painting.creationYear}} 
-						{% trans %}год{% endtrans %}
-					</p>
+				<p class="uk-text-center">
+					{% if (app.request.locale == 'en') and (painting.material == 'холст, натянутый на подрамник, масло') %}
+						canvas stretched on a stretcher, oil  
+					{% else %}
+						{{ painting.material }} 
+					{% endif %}						 
+					{{ painting.hight}} 
+					X 
+					{{ painting.width }}.  
+					{{painting.creationYear}} 
+					{% trans %}год{% endtrans %}
+				</p>
+				<div>
+					<div id="show-painting-description">
+						{% if painting.alt %}
+							<p>{% trans %}Описание работы{% endtrans %}</p>
+							<p class="uk-margin-top">
+								{% if (app.request.locale == 'en') and (painting.altEn is not empty) %}
+									{{painting.altEn}}
+								{% else %}
+									{{painting.alt}}
+								{% endif %}
+							</p>
+						{% endif %}
+					</div>
+					
 				</div>
 
 				{% if app.session.get('mode_price') %}
 					<div id="show-painting-price" class=" uk-text-center">{{painting.price}} р</div>
 				{% endif %}
-			</div>
-			<div class="uk-text-center">
-				<a class="show-painting-button" href="{{ path('price_mode_show_page', {'id': painting.id}) }}">
-					{% if app.session.get('mode_price') %}
-						{% trans %}Просмотр в режиме выставки{% endtrans %}
-					{% else %}
-						{% trans %}Показать цены{% endtrans %}
-					{% endif %}				
-				</a>
 			</div>
 			<div id="paintings-show-small" class="uk-text-center" uk-grid>
 				<div class="uk-width-expand@m"></div>
